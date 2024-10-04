@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS - Página Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <p> Bienvenidos a la página de BTS </p>
+        <font face="Comic Sans Ms, arial, verdana" size="7">"Descubre más sobre el grupo surcoreano de K-pop."</font>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">Sobre BTS</a></li>
+            <li><a href="#members">Miembros</a></li>
+            <li><a href="#discography">Discografía</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>¿Quiénes son BTS?</h2>
+        <p>
+            BTS es, sin duda, el grupo de mayor éxito de la historia del K-Pop, el género musical que desde Corea del Sur ha conquistado las listas de ventas de todo el mundo.
+            <br><br>
+            Su origen está en las audiciones que la discográfica Big Hit Entertainment realizó para formar una boy band en 2010. Los primeros elegidos fueron RM y Suga, que desde ese momento se convirtieron en los puntales de la banda. El resto de la alineación sufrió varios cambios durante su andadura inicial, hasta estabilizarse definitivamente en 2012, con Jin, Suga, J-Hope, RM, Jimin, V y Jungkook.
+
+        <ul type="circle"><!-- los tipos de como querer la forma viñetas -->
+        <li>El nombre del grupo, BTS, es una abreviatura de la expresión coreana Bangtan Sonyeondan, que literalmente significa “Boy Scouts a prueba de balas”.</li><br>
+        <li>El grupo debuta el 13 de junio de 2013 con la canción “No More Dream”.</li><br>
+        <li>El nombre de su club de fan oficial es A.R.M.Y, acrónimo de “Adorable Representative MC for Youth”.</li> <br>
+        <li> En sus inicios BTS tiene un éxito moderado, primero con la publicación de su álbum debut simple “2 Cool 4 Skool”.</li><br>
+
+        <div align="center">
+            <img src="bts.jpeg" width="50%" height="100%"></a><!--para poner en el centro-->
+            <br><br>
+        </div>
+        </ul>     
+        </p>
+    </section>
+
+    <section id="members">
+        <h2>Miembros de BTS</h2>
+        <ul>
+            <li><img src="img/rm.jpeg" alt="RM" width="100" height="100"><p>RM</p></li>
+            <li><img src="img/jin.jpeg" alt="Jin" width="100" height="100"><p>Jin</p></li>
+            <li><img src="img/suga.jpeg" alt="Suga" width="100" height="100"><p>Suga</p></li>
+            <li><img src="img/jhope.jpeg" alt="J-Hope" width="100" height="100"><p>J-Hope</p></li>
+            <li><img src="img/jimin.jpeg" alt="Jimin" width="100" height="100"><p>Jimin</p></li>
+            <li><img src="img/v.jpeg" alt="V" width="100" height="100"><p>V</p></li>
+            <li><img src="img/jk.jpeg" alt="Jungkook" width="100" height="100"><p>Jungkook</p></li>
+        </ul>
+    </section>
+
+    <section id="discography">
+        <h2>Discografía</h2>
+        <p>Algunos de los álbumes más conocidos de BTS son:</p>
+        <ul>
+            <li>Map of the Soul: 7</li>
+            <li>BE</li>
+            <li>Love Yourself: Tear</li>
+            <li>Wings</li>
+            <br><br>
+        </ul>
+    </section>
+
+<!--Formulario para army fans -->
+    <section id="fan-form">
+        <h2>Formulario para Fans - ARMY</h2>
+        <form action="process.php" method="post">
+            <label for="name">Nombre del fan:</label><br>
+            <input type="text" id="name" name="fan_name" required><br>
+
+            <label for="bias">Elige tu bias:</label><br>
+            <select id="bias" name="fan_bias" required>
+                <option value="RM">RM</option>
+                <option value="Jin">Jin</option>
+                <option value="Suga">Suga</option>
+                <option value="J-Hope">J-Hope</option>
+                <option value="Jimin">Jimin</option>
+                <option value="V">V</option>
+                <option value="Jungkook">Jungkook</option>
+            </select><br>
+
+            <input type="submit" value="Enviar"><br><br><br>
+        </form>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2024 Página sobre BTS - Yeni Elda Garcia Ramón - Creada con HTML, CSS y PHP</p>
+    </footer>
+</body>
+</html>
